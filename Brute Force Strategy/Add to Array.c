@@ -30,7 +30,7 @@ num does not contain any leading zeros except for the zero itself.
 1 <= k <= 104
 
 For example:
-–——————————————————
+–——————————————————-
 | Input  | Result  |
 |————————|—————————|
 |4       |1 2 3 4  |
