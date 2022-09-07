@@ -10,8 +10,13 @@ Output Format:
 Element x - That is repeated
 
 For example:
+-————————————————————-
+| Input    | Result  |
+|——————————|—————————|
+|5         |1        |
+|1 1 2 3 4 |         |
+|__________|_________| */
 
-*/
 #include<stdio.h>
 int main()
 {
