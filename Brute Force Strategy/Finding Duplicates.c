@@ -1,3 +1,17 @@
+/* Problem Statement:
+Find Duplicate in Array.
+Given a read only array of n + 1 integers between 1 and n, find one number that repeats.
+
+Input Format:
+First Line - Number of elements
+n Lines - n Elements
+
+Output Format:
+Element x - That is repeated
+
+For example:
+
+*/
 #include<stdio.h>
 int main()
 {
