@@ -1,3 +1,15 @@
+/* Problem Statement:
+Bubble sort is one of the easiest and brute force sorting algorithms. It is used to sort elements in either ascending or descending order.
+Write a program to implement the bubble sort Algorithm. Get the number of elements as in input in the first line and then get the numbers as input.
+Display the numbers in ascending order as output.
+
+Input:
+6
+6 4 3 9 0 1
+
+Output:
+0 1 3 4 6 9 */
+
 #include<stdio.h>
 int main()
 {
