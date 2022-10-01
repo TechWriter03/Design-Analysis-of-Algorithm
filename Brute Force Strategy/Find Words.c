@@ -17,7 +17,18 @@ Constraints:
 1 <= words.length <= 1000
 1 <= words[i].length, chars.length <= 100
 words[i] and chars consist of lowercase English letters.
-*/
+
+For example:
+–——————————————————–
+| Input  | Result  |
+|————————|—————————|
+|4       |6        |
+|cat     |         |
+|bt      |         |
+|hat     |         |
+|tree    |         |
+|atach   |         |
+|________|_________|   */
 
 #include<stdio.h>
 #include<stdlib.h>
