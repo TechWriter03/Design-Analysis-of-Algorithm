@@ -1,3 +1,20 @@
+/* Problem Statement:
+
+Given a non-empty array nums containing only positive integers, 
+find if the array can be partitioned into two subsets such that the sum of elements in both subsets is equal.
+
+Constraints:
+1 <= n <= 200
+1 <= nums[i] <= 100
+
+For Example:
+–——————————————————-
+| Input   | Result |
+|—————————|————————|
+|4        |true    |
+|1 5 11 5 |        |
+|_________|________| */
+
 #include<stdio.h>
 int main()
 {
