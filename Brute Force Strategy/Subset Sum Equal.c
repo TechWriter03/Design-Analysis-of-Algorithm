@@ -16,51 +16,51 @@ For Example:
 |_________|________| */
 
 #include<stdio.h>
+int f=0;
+int power(int x,int y)
+{
+    int ans=1;
+    for(int i=1;i<=y;i++)
+        ans*=x;
+    return ans;
+}
+void subset(int ind,int n,int a[],int sz,int temp[],int sum)
+{
+    int s=0;
+    if(ind==n)
+    {
+        for(int i=0;i<sz;i++)
+            s+=temp[i];
+        if(s==sum/2)
+            f=1;
+        return;
+    }
+    subset(ind+1,n,a,sz,temp,sum);
+    temp[sz]=a[ind];
+    subset(ind+1,n,a,sz+1,temp,sum);
+}
 int main()
 {
-    int n,f=0,T=0,c2;
+    int n,sum=0;
     scanf("%d",&n);
-    int a[n];
+    int a[n],temp[n];
     for(int i=0;i<n;i++)
     {
         scanf("%d",&a[i]);
-        T+=a[i];
+        sum+=a[i];
     }
-    printf("\n");
-    for(int i=0;i<n;i++)
+    if(sum%2==1)
     {
-        int c=0;
-        for(int j=i+1;j<n;j++)
-        c+=a[j];
-        if(i>0)
-        {
-            int k=i-1;
-            while(k>=0)
-            {
-                c+=a[k];
-                k--;
-            }
-        }
-        if(c==a[i])
-        {
-            f=1;
-            break;
-        }
-        for(int j=i+1;j<n;j++)
-        {
-            int c1=0;
-            c1+=a[i]+a[j];
-            c2=T-c1;
-            if(c1==c2)
-            {
-                f=1;
-                break;
-            }
-        }
+        printf("false");
+        return 0;
     }
-    if(f==1)
-    printf("true");
     else
-    printf("false");
-    return 0;
+    {
+        subset(0,n,a,0,temp,sum);
+        if(f==0)
+            printf("false");
+        else
+            printf("true");
+        return 0;
+    }
 }
