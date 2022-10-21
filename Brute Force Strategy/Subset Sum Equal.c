@@ -17,13 +17,6 @@ For Example:
 
 #include<stdio.h>
 int f=0;
-int power(int x,int y)
-{
-    int ans=1;
-    for(int i=1;i<=y;i++)
-        ans*=x;
-    return ans;
-}
 void subset(int ind,int n,int a[],int sz,int temp[],int sum)
 {
     int s=0;
