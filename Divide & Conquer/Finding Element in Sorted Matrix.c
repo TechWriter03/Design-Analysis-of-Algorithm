@@ -2,21 +2,22 @@
 int Bin_Srch(int a[],int k,int l,int h,int m)
 {
     if(a[m]==k)
-        return m;
+        return 1;
+    else if(l==h)
+        return -1;
     else if(a[m]>k)
     {
         h=m-1;
         m=(l+h)/2;
         return Bin_Srch(a,k,l,h,m);
     }
-    else if(a[m]<k)
+    else
     {
         l=m+1;
         m=(l+h)/2;
         return Bin_Srch(a,k,l,h,m);
     }
-    else 
-        return -1;
+    
 }
 int main()
 {
