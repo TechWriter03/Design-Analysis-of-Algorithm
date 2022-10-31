@@ -3,12 +3,12 @@ Given a sorted array and a value x, the floor of x is the largest element in arr
 Write divide and conquer algorithm to find floor of x.
 
 Input Format:
-- First Line Contains Integer n – Size of array
-- Next n lines Contains n numbers – Elements of an array
-- Last Line Contains Integer x – Value for x
+   First Line Contains Integer n – Size of array
+   Next n lines Contains n numbers – Elements of an array
+   Last Line Contains Integer x – Value for x
  
 Output Format:
-- First Line Contains Integer – Floor value for x */
+   First Line Contains Integer – Floor value for x */
 
 #include<stdio.h>
 int n,x;
