@@ -7,6 +7,7 @@ Input Format:
 - First Line Contains Integer m – Size of array
 - Next m*m lines Contains m*m numbers – Elements of an array
 - An Integer x – Element to check present in matrix or not
+
 Output Format:
 - First Line Contains FOUND or NOT FOUND -  If x is the present print “FOUND” otherwise print “NOT FOUND” */
 
