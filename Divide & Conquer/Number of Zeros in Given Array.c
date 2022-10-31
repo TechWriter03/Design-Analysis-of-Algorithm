@@ -3,11 +3,11 @@ Given an array of 1s and 0s this has all 1s first followed by all 0s. Aim is to 
 Write a program using Divide and Conquer to Count the number of zeroes in the given array.
 
 Input Format:
-- First Line Contains Integer m – Size of array
-- Next m lines Contains m numbers – Elements of an array
+   First Line Contains Integer m – Size of array
+   Next m lines Contains m numbers – Elements of an array
 
 Output Format:
-- First Line Contains Integer – Number of zeroes present in the given array. */
+   First Line Contains Integer – Number of zeroes present in the given array. */
 
 #include<stdio.h>
 int divide(int n,int a[])
