@@ -1,3 +1,15 @@
+/* Problem Statement:
+Given a sorted matrix mat[m][m] and an element ‘x’. Find whether the element x is present in the matrix.
+Matrix is sorted in a way such that all elements in a row are sorted in increasing order and for row ‘i’,
+where 1 <= i <= m-1, the first element of row ‘i’ is greater than or equal to the last element of row ‘i-1’. 
+
+Input Format:
+- First Line Contains Integer m – Size of array
+- Next m*m lines Contains m*m numbers – Elements of an array
+- An Integer x – Element to check present in matrix or not
+Output Format:
+- First Line Contains FOUND or NOT FOUND -  If x is the present print “FOUND” otherwise print “NOT FOUND” */
+
 #include<stdio.h>
 int Bin_Srch(int a[],int k,int l,int h,int m)
 {
